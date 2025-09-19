@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: "Londrina Solid", sans-serif;
+  background-color: #181b2c;
+  color: #e2e5f3;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 100px;
+  height: 100px;
+}
+
+.logo {
+  height: 100px;   
+  width: auto;
+  margin-right: 15px; 
+  
+}
+
+
+.title {
+  font-family: "Lilita One", sans-serif;
+  font-size: 36px;
+  color: red;
+  text-shadow: 
+    -2px -2px 0 #e2e5f3,
+     2px -2px 0 #e2e5f3,
+    -2px  2px 0 #e2e5f3,
+     2px  2px 0 #e2e5f3;
+ margin-top: 20px
+}
+
+.intro-paragraph  {
+  
+ text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  
+}
+
+.intro-paragraph h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-paragraph p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+/* hamburger */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  display: none;
+  margin-right: 30px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e2e5f3;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.content {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.section-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.section {
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.placeholder {
+  width: 250px;
+  height: 250px;
+  background-color: #667;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e5f3;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
