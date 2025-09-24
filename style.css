@@ -21,7 +21,7 @@ body {
 .logo {
   height: 500px;   
   width: auto;
-  margin-left: 725px; 
+  margin-left: 650px; 
 }
 
 
@@ -35,6 +35,9 @@ body {
     -2px  2px 0 #e2e5f3,
      2px  2px 0 #e2e5f3;
  margin-top: 10px
+}
+.title1 {
+ margin-top: 15px;
 }
 
 .intro-paragraph  {
@@ -73,7 +76,7 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #e2e5f3;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   position: relative;
 }
