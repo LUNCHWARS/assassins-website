@@ -12,13 +12,16 @@ body {
   justify-content: space-between;
   padding: 10px 100px;
   height: 100px;
+  background-color: black;
+  padding: 15px 40px;
+  overflow: hidden;  
+  
 }
 
 .logo {
-  height: 100px;   
+  height: 500px;   
   width: auto;
-  margin-right: 15px; 
-  
+  margin-left: 725px; 
 }
 
 
@@ -31,7 +34,7 @@ body {
      2px -2px 0 #e2e5f3,
     -2px  2px 0 #e2e5f3,
      2px  2px 0 #e2e5f3;
- margin-top: 20px
+ margin-top: 10px
 }
 
 .intro-paragraph  {
