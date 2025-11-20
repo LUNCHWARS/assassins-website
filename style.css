@@ -45,7 +45,7 @@ body {
   paint-order: stroke fill;
 }
 
-.japanese_warning {
+.japanese-warning {
   -webkit-text-stroke: 6px orange;
   paint-order: stroke fill;
 }
