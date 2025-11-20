@@ -45,6 +45,11 @@ body {
   paint-order: stroke fill;
 }
 
+.japanese_warning {
+  -webkit-text-stroke: 6px orange;
+  paint-order: stroke fill;
+}
+
 .intro-paragraph h1 {
   font-size: 36px;
   margin-bottom: 20px;
